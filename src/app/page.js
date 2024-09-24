@@ -364,8 +364,8 @@ export default function RandomWheel() {
           <div className="min-w-[300px] ">
             {isAdvanced && (
               <AdvancedFeature
-                handleChange={handleChange}
                 typeOflocation={typeOflocation}
+                handleChange={handleChange}
                 isSpinning={isSpinning}
                 listOfTypeslocations={listOfTypeslocations}
                 setIsAdvanced={setIsAdvanced}
