@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import styles from "./randomwheel.module.css";
 import axios from "axios";
 import {
   TextField,
@@ -10,7 +9,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-
+import styles from "./randomwheel.module.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
