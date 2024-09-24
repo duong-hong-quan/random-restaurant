@@ -19,28 +19,30 @@ const AdvancedFeature = ({
   isAdvanced,
   getLocation,
 }) => {
+  const listMenuItems =
+    listOfTypeslocations.length > 0 ? listOfTypeslocations : [];
   return (
     <div className="flex min-w-[300px] items-center">
-      <FormControl fullWidth sx={{ mb: 3 }}>
-        <InputLabel id="demo-simple-select-label">Type</InputLabel>
+      {/* <FormControl fullWidth sx={{ mb: 3 }}> */}
+      <InputLabel id="demo-simple-select-label">Type</InputLabel>
 
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={typeOflocation}
-          label="Type location"
-          onChange={handleChange}
-          disabled={isSpinning}
-        >
-          {listOfTypeslocations?.map((item, index) => {
-            return (
-              <MenuItem key={index} value={item}>
-                {item}
-              </MenuItem>
-            );
-          })}
-        </Select>
-      </FormControl>
+      <Select
+        labelId="demo-simple-select-label"
+        id="demo-simple-select"
+        value={typeOflocation}
+        label="Type location"
+        onChange={handleChange}
+        disabled={isSpinning}
+      >
+        {listMenuItems.map((item, index) => {
+          return (
+            <MenuItem key={index} value={item}>
+              {item}
+            </MenuItem>
+          );
+        })}
+      </Select>
+      {/* </FormControl> */}
       <FormControlLabel
         sx={{
           fontWeight: "bold",
