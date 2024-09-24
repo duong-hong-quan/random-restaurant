@@ -30,9 +30,7 @@ import ListSuggestions from "../components/ListSuggestion";
 import LocationList from "../components/LocationList";
 import ResultModal from "../components/ResultModal";
 import { initiallocations, listOfTypeslocations } from "../constant/init-data";
-import "./globals.css";
 import styles from "./randomwheel.module.css";
-
 export default function RandomWheel() {
   const canvasRef = useRef(null);
   const [locations, setlocations] = useState([]);
