@@ -40,11 +40,6 @@ const NormalFeature = ({
       >
         <ExpandMore />
       </IconButton>
-      <Select label="Type location">
-        <MenuItem key="1" value="abc">
-          abc
-        </MenuItem>
-      </Select>
     </div>
   );
 };
