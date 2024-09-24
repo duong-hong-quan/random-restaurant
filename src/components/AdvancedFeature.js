@@ -1,4 +1,5 @@
 "use client";
+import { listOfTypeslocations } from "@/constant/init-data";
 import { ExpandLess } from "@mui/icons-material";
 import {
   FormControl,
@@ -14,7 +15,6 @@ const AdvancedFeature = ({
   typeOflocation,
   handleChange,
   isSpinning,
-  listOfTypeslocations,
   setIsAdvanced,
   isAdvanced,
   getLocation,
@@ -33,7 +33,7 @@ const AdvancedFeature = ({
           onChange={handleChange}
           disabled={isSpinning}
         >
-          {listMenuItems?.map((item, index) => {
+          {listOfTypeslocations?.map((item, index) => {
             return (
               <MenuItem key={index} value={item}>
                 {item}
