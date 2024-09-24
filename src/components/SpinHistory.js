@@ -1,9 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { getEntity, onEntityChange } from "@/firebase/databaseApi";
 import { Card, CardContent, CardHeader, CardTitle } from "@mui/material";
-import { Result } from "postcss";
-import ResultModal from "./ResultModal";
 
 const SpinHistory = ({ spinHistory }) => {
   return (
