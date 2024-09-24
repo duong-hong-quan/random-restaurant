@@ -1,3 +1,5 @@
+"use client";
+
 import { List, ListItem, ListItemText } from "@mui/material";
 
 const ListSuggestions = ({ addlocation, listRef, listSuggestLocation }) => {

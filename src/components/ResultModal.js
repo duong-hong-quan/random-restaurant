@@ -1,3 +1,5 @@
+"use client";
+
 const ResultModal = ({ styles, chosenlocation, showResult }) => {
   return (
     <>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 
 const LocationList = ({

@@ -1,3 +1,4 @@
+"use client";
 import { ExpandLess } from "@mui/icons-material";
 import {
   FormControl,
