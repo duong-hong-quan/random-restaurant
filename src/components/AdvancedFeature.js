@@ -19,7 +19,7 @@ const AdvancedFeature = ({
   isAdvanced,
   getLocation,
 }) => {
-  console.log("loading", listOfTypeslocations);
+  // console.log("loading", listOfTypeslocations);
   return (
     <div className="flex min-w-[300px] items-center">
       <FormControl fullWidth sx={{ mb: 3 }}>
