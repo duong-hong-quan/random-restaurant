@@ -22,15 +22,15 @@ import {
   createSpinHistory,
   deleteAllEntities,
 } from "@/firebase/databaseApi";
-import SpinHistory from "@/components/SpinHistory";
+import SpinHistory from "../components/SpinHistory";
 import { LinkIcon } from "lucide-react";
-import WheelCanvas from "@/components/WheelCanvas";
-import AdvancedFeature from "@/components/AdvancedFeature";
-import NormalFeature from "@/components/NormalFeature";
-import ListSuggestions from "@/components/ListSuggestion";
-import LocationList from "@/components/LocationList";
-import ResultModal from "@/components/ResultModal";
-import { initiallocations, listOfTypeslocations } from "@/constant/init-data";
+import WheelCanvas from "../components/WheelCanvas";
+import AdvancedFeature from "../components/AdvancedFeature";
+import NormalFeature from "../components/NormalFeature";
+import ListSuggestions from "../components/ListSuggestion";
+import LocationList from "../components/LocationList";
+import ResultModal from "../components/ResultModal";
+import { initiallocations, listOfTypeslocations } from "../constant/init-data";
 
 export default function RandomWheel() {
   const canvasRef = useRef(null);
