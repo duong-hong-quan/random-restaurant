@@ -33,7 +33,7 @@ const AdvancedFeature = ({
           onChange={handleChange}
           disabled={isSpinning}
         >
-          {listMenuItems.map((item, index) => {
+          {listMenuItems?.map((item, index) => {
             return (
               <MenuItem key={index} value={item}>
                 {item}
