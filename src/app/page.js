@@ -8,14 +8,7 @@ import {
   Tab,
   IconButton,
   Typography,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  FormControlLabel,
-  Switch,
 } from "@mui/material";
-import styles from "./randomwheel.module.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -37,8 +30,8 @@ import ListSuggestions from "../components/ListSuggestion";
 import LocationList from "../components/LocationList";
 import ResultModal from "../components/ResultModal";
 import { initiallocations, listOfTypeslocations } from "../constant/init-data";
-
-import { ExpandLess } from "@mui/icons-material";
+import "./globals.css";
+import styles from "./randomwheel.module.css";
 
 export default function RandomWheel() {
   const canvasRef = useRef(null);
@@ -370,54 +363,15 @@ export default function RandomWheel() {
         <div className=" flex-1 px-2">
           <div className="min-w-[300px] ">
             {isAdvanced && (
-              // <AdvancedFeature
-              //   typeOflocation={typeOflocation}
-              //   handleChange={handleChange}
-              //   isSpinning={isSpinning}
-              //   listOfTypeslocations={listOfTypeslocations}
-              //   setIsAdvanced={setIsAdvanced}
-              //   isAdvanced={isAdvanced}
-              //   getLocation={getLocation}
-              // />
-              <div className="flex min-w-[300px] items-center">
-                <FormControl fullWidth sx={{ mb: 3 }}>
-                  <InputLabel id="demo-simple-select-label">Type</InputLabel>
-
-                  <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={typeOflocation}
-                    label="Type location"
-                    onChange={handleChange}
-                    disabled={isSpinning}
-                  >
-                    {listOfTypeslocations?.map((item, index) => {
-                      return (
-                        <MenuItem key={index} value={item}>
-                          {item}
-                        </MenuItem>
-                      );
-                    })}
-                  </Select>
-                </FormControl>
-                <FormControlLabel
-                  sx={{
-                    fontWeight: "bold",
-                  }}
-                  value="nearby"
-                  control={<Switch color="primary" />}
-                  label="Nearby"
-                  labelPlacement="top"
-                  onChange={getLocation}
-                />
-                <IconButton
-                  color="primary"
-                  onClick={() => setIsAdvanced(!isAdvanced)}
-                  aria-label="toggle advanced options"
-                >
-                  <ExpandLess />
-                </IconButton>
-              </div>
+              <AdvancedFeature
+                typeOflocation={typeOflocation}
+                handleChange={handleChange}
+                isSpinning={isSpinning}
+                listOfTypeslocations={listOfTypeslocations}
+                setIsAdvanced={setIsAdvanced}
+                isAdvanced={isAdvanced}
+                getLocation={getLocation}
+              />
             )}
             {!isAdvanced && (
               <NormalFeature
