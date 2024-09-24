@@ -1,62 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-.form-add-restaurant {
-  display: grid;
-  position: relative;
-}
-
-.form-add-restaurant input {
-  padding: 4px 12px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.form-add-restaurant .list-locations{
-  height: 300px;
-  overflow: auto;
-  display: grid;
-  gap: 4px;
-  position: absolute;
-  top: 36px;
-  left: 0;
-  padding: 16px;
-  background: #ffffff;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.form-add-restaurant .list-locations p {
-  padding: 4px;
-  border-radius: 4px;
-}
-
-.form-add-restaurant .list-locations p:hover {
-  background: #ccc;
-  cursor: pointer;
-}
