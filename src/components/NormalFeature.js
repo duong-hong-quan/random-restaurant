@@ -1,7 +1,7 @@
 "use client";
 
 import { ExpandMore } from "@mui/icons-material";
-import { Button, IconButton, TextField } from "@mui/material";
+import { Button, IconButton, MenuItem, Select, TextField } from "@mui/material";
 
 const NormalFeature = ({
   locationInputs,
@@ -40,6 +40,11 @@ const NormalFeature = ({
       >
         <ExpandMore />
       </IconButton>
+      <Select label="Type location">
+        <MenuItem key="1" value="abc">
+          abc
+        </MenuItem>
+      </Select>
     </div>
   );
 };
