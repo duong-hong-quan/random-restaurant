@@ -26,8 +26,8 @@ const AdvancedFeature = ({
         <InputLabel id="demo-simple-select-label">Type</InputLabel>
 
         <Select
-          // labelId="demo-simple-select-label"
-          // id="demo-simple-select"
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
           value={typeOflocation}
           label="Type location"
           onChange={handleChange}
